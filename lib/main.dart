@@ -2,6 +2,14 @@
 
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(MaterialApp(
+    home: Get_Started(),
+    theme: ThemeData(primarySwatch: Colors.deepPurple),
+    debugShowCheckedModeBanner: false,
+  ));
+}
+
 class Get_Started extends StatelessWidget {
   const Get_Started({Key? key}) : super(key: key);
 
@@ -226,36 +234,3 @@ class Training_completion extends StatelessWidget {
     );
   }
 }
-
-void main() {
-  runApp(MaterialApp(
-    home: Get_Started(),
-    debugShowCheckedModeBanner: false,
-  ));
-}
-
-
-
-
-
-
-
-
-
-
-
-
-//  ElevatedButton(
-//                           onPressed: () {
-//                             Navigator.push(context,
-//                                 MaterialPageRoute(builder: (context) {
-//                               return Training_completion();
-//                             }));
-//                           },
-//                           child: Text("Login"),
-//                           style: ElevatedButton.styleFrom(
-//                               primary: Colors.blueAccent),
-//                         ),
-//                         width: 300,
-//                       ),
-//                     ],
